@@ -1,14 +1,14 @@
 import React,{Fragment} from "react";
 
-function Ingresos({Nombre},{Dueño},{Fecha},{Hora},{Sintomas}){
+function Ingresos(paciente){
     return (
       <Fragment>
         <div class="cita">
-            <p>Mascota: <span>{Nombre}</span></p>
-            <p>Dueño: <span>{Dueño}</span></p>
-            <p>Fecha: <span>{Fecha}</span></p>
-            <p>Hora: <span>{Hora}</span></p>
-            <p>Sintomas: <span>{Sintomas}</span></p><button class="button elimnar u-full-width">Eliminar ×</button>
+            <p>Mascota: <span>{paciente.nombre}</span></p>
+            <p>Dueño: <span>{paciente.dueno}</span></p>
+            <p>Fecha: <span>{paciente.fecha}</span></p>
+            <p>Hora: <span>{paciente.hora}</span></p>
+            <p>Sintomas: <span>{paciente.sintomas}</span></p><button class="button elimnar u-full-width">Eliminar ×</button>
         </div>
       </Fragment>
     );
